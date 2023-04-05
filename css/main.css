@@ -28,3 +28,143 @@ h1 {
 .avengers-poster {
     width: 50%;
 }
+
+@media only screen and (min-width: 800px) {
+    .mobile-container {
+        width: 100%;
+        display: inline-block;
+        grid-template-columns: 1fr;
+    }
+}
+
+/****************
+DESKTOP
+****************/
+
+/*gives media screen to video production, web dev, and print section, and sets the display, grid, and width*/
+@media screen and (min-width: 750px) {
+    .allvideoprod {
+        display: inline-block;
+        width: 50%;
+        grid-template-columns: 1fr;
+    }
+
+    .mrkt {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 50%;
+    }
+    .allwebdev {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 50%;
+    }
+
+    .allprint {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 50%;
+    }
+}
+
+/*gives media screen to john and bob sections and sets the display, grid, width, float*/
+@media screen and (min-width:750px) {
+    .alljohn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 50%;
+    }
+
+    .allbob {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 50%;
+        float: right;
+    }
+}
+
+/*gives media screen to send us a message section and location section and gives it display, grid, width, and float*/
+@media screen and (min-width:750px) {
+    .leftsendarea {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 45%;
+    }
+
+    .location {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+        width: 45%;
+        float: right;
+    }
+}
+/*gives media screen to about us section and sets display, grid, width, padding*/
+
+@media screen and (min-width:1120px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 50%;
+        padding-right: 50%;
+        grid-template-rows: 2fr;
+    }
+
+    .aboutp {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        float: right
+    }
+}
+
+/*gives media screen to hours of operation and table section and sets flex, display, and width*/
+@media screen and (min-width:750px) {
+    .hofandtable {
+        flex-wrap: wrap;
+        display: grid;
+        width: 50%;
+    }
+}
+
+/*gives media screen and targets form clss and gives it padding top of 20%*/
+@media screen and (min-width:750px) {
+    .form {
+        padding-top: 20%;
+    }
+}
+
+/*targets the media screen with class of digitalt and adjusts width*/
+@media screen and (min-width:750px) {
+    .digitalt {
+        width: 50%;
+    }
+}
+
+/*targets the media screen with class of threeelements and adds grid display and grid properties*/
+@media screen and (min-width:400px) {
+    .main-content {
+        width: 70%;
+        float: left;
+    }
+
+    .sidebar {
+        width: 29%;
+        float: right;
+    }
+    .threeelements {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-start: repeat(3,1fr);
+        grid-column-end: repeat(3,1fr);
+        flex-wrap: wrap;
+        align-self: start;
+    }
+}
