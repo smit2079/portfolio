@@ -282,6 +282,60 @@ footer {
     width: 25%;
 }
 
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.name-input {
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.email-input {
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.message-input {
+  width: 100%;
+  height: 200px;
+  margin-left: 17rem;
+  box-sizing: border-box;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  background-color: var(--white);
+}
+
+.message-h {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-left: 18rem;
+}
+
+.submit-button {
+    color: var(--white);
+    background-color: var(--blue);
+    text-transform: uppercase;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 45rem;
+    text-align: center;
+}
+
+.name-email-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-left: 33rem;
+}
 @media only screen and (min-width: 800px) {
     .mobile-container {
         width: 100%;
