@@ -1,5 +1,11 @@
+:root {
+    --bs-primary-rgb: var(--JD-primary-color-rgb);
+    --JD-primary-color: red;
+    --JD-primary-color-rgb: 255, 0, 0;
+}
+
 h1 {
-    color: blue;
+    color: var(--JD-primary-color);
 }
 
 .site-logo {
