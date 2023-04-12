@@ -9,7 +9,8 @@ h1 {
 }
 
 .site-logo {
-    width: 20%;
+    width: 8rem;
+    display: block;
 }
 
 .footer-logo {
@@ -37,6 +38,10 @@ h1 {
 
 .nav-links {
     list-style: none;
+}
+
+.navigation {
+    background-color: #2699FB;
 }
 
 @media only screen and (min-width: 800px) {
