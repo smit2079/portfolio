@@ -207,6 +207,10 @@ ul {
     display: block;
 }
 
+footer {
+    background-color: var(--blue);
+}
+
 @media only screen and (min-width: 800px) {
     .mobile-container {
         width: 100%;
