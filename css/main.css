@@ -4,10 +4,6 @@
     --grey: #AAAAAA;
 }
 
-h1 {
-    color: var(--JD-primary-color);
-}
-
 .site-logo {
     width: 8rem;
     display: block;
