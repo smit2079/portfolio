@@ -170,36 +170,51 @@ ul {
 .footer-logo {
     width: 80px;
 }
+
 .justice-league-poster {
     width: 50%;
+    border-radius: 5%;
 }
 
 .basketball-net-image {
     width: 50%;
+    border-radius: 5%;
 }
 
 .banner-image {
     width: 50%;
+    border-radius: 5%;
+    object-fit: cover;
 }
 
 .fantastic-four-image {
     width: 50%;
+    border-radius: 5%;
 }
 
 .avengers-poster {
     width: 50%;
+    border-radius: 5%;
 }
 
 .movie-film {
-    width: 80%;
+    width: 20rem;
+    border-radius: 5%;
 }
 
 .comics-image {
-    width: 80%;
+    width: 20rem;
+    border-radius: 5%;
+}
+
+.superheroes-image {
+    width: 20rem;
+    border-radius: 5%;
 }
 
 .bio-image {
     width: 50%;
+    border-radius: 5%;
 }
 
 .navigation {
@@ -209,6 +224,18 @@ ul {
 
 footer {
     background-color: var(--blue);
+}
+
+.twitter-logo {
+    width: 25%;
+}
+
+.instagram-logo {
+    width: 25%;
+}
+
+.behance-logo {
+    width: 25%;
 }
 
 @media only screen and (min-width: 800px) {
