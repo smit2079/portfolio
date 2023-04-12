@@ -1,7 +1,7 @@
 :root {
-    --bs-primary-rgb: var(--JD-primary-color-rgb);
-    --JD-primary-color: red;
-    --JD-primary-color-rgb: 255, 0, 0;
+    --red: #BA3330;
+    --blue: #2699FB;
+    --grey: #AAAAAA;
 }
 
 h1 {
@@ -41,7 +41,9 @@ h1 {
 }
 
 .navigation {
-    background-color: #2699FB;
+    background-color: var(--blue);
+    list-style: none;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 800px) {
