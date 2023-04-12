@@ -172,8 +172,11 @@ ul {
 }
 
 .justice-league-poster {
-    width: 50%;
-    border-radius: 5%;
+    width: 90%;
+    border-radius: 10%;
+    margin-left: 1.25rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 .basketball-net-image {
@@ -182,19 +185,27 @@ ul {
 }
 
 .banner-image {
-    width: 50%;
-    border-radius: 5%;
+    width: 90%;
+    border-radius: 10%;
+    margin-left: 1.25rem;
+    height: 15rem;
     object-fit: cover;
 }
 
 .fantastic-four-image {
-    width: 50%;
-    border-radius: 5%;
+    width: 90%;
+    border-radius: 10%;
+    margin-left: 1.25rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 .avengers-poster {
-    width: 50%;
-    border-radius: 5%;
+    width: 90%;
+    border-radius: 10%;
+    margin-left: 1.25rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 .movie-film {
