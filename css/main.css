@@ -160,7 +160,7 @@ ul {
     .subnav-content {
         padding: 20px 0 ;
         display: none;
-        background-color:  var(--black);
+        background-color:  var(--white);
     }
     .subnav-content a {
         color: black;
@@ -190,12 +190,21 @@ ul {
     width: 50%;
 }
 
+.movie-film {
+    width: 80%;
+}
 
+.comics-image {
+    width: 80%;
+}
+
+.bio-image {
+    width: 50%;
+}
 
 .navigation {
     background-color: var(--blue);
-    list-style: none;
-    text-decoration: none;
+    display: block;
 }
 
 @media only screen and (min-width: 800px) {
