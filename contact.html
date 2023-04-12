@@ -15,7 +15,9 @@
         <div class="navigation">        
             <img class="site-logo" src="images/logo.png" alt="logo">
             <h1>Nate Smith</h1>
-            <nav>
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamburger" for="side-menu"><span class="hamburger-lines"></span></label>
+            <nav class="nav">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>                    
                     <li class="subnav">
@@ -70,19 +72,23 @@
         <h3><strong>Email: </strong>nate.smithnyg@gmail.com</h3>
     </div>
     <div class="form">
-        <form role="form">
-<!--Form section for user to enter name-->
-                <label class="form-label" for="Text">Your Name</label>
-                <input class="form-input1" type="text" name="Text">
-<!--Form section for user to enter email-->
-                <label class="form-label" for="Text">Your Email</label>
-                <input class="form-input1" type="text" name="Text">
-<!--Form section for user to enter a message-->
-                <label class="form-label" for="Textarea">Message</label>
-                <textarea class="form-field" name="Textarea"></textarea>
-<!--Form section for the user to submit the information with the submit button-->
-            <input class="form-button" type="submit" value="Submit">  
-        </form>
+        <form>
+            <div class="name-email-input">
+              <div class="name-form">
+                <label for="name-heading">Your Name</label>
+                <input type="text" class="name-input" id="yourName" placeholder="Enter name">
+              </div>
+              <div class="email-form">
+                <label for="email-heading">Your Email</label>
+                <input type="email" class="email-input" id="yourEmail" placeholder="Enter email">
+              </div>   
+            </div>
+            <div class="message-form">
+                <label class="message-h" for="message-heading">Message</label>
+                <textarea class="message-input" id="yourMessage" rows="3"></textarea>
+              </div>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
     </div>
     <footer>
         <img class="footer-logo" src="images/logo.png" alt="logo">
