@@ -6,4 +6,4 @@ Twitter Logo and Instagram Logo source: https://www.google.com/url?sa=i&url=http
 
 My Life Comics Image source: https://cdn.pixabay.com/photo/2016/09/03/12/06/marvel-1641554_1280.jpg
 
-Influences image source: https://pixabay.com/ and https://www.pexels.com/
+Influences image sources: https://pixabay.com/ and https://www.pexels.com/
