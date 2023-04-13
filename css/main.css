@@ -52,7 +52,7 @@ ul {
 }
 
 .nav-links a:hover {
-    background-color: var(--white);
+    background-color: var(--red);
 }
 
 .nav {
@@ -207,25 +207,36 @@ ul {
     grid-gap: 20px;
     column-gap: 20px;
     padding-right: 20px;
-    align-items: center;
+    align-items: right;
 }
 
 .category-button {
     background-color: var(--red);
     color: var(--white);
     grid-column: 2;
+    width: 20rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--white) !important;
+    border-radius: 30%;
 }
 
 .influences-button {
     background-color: var(--blue);
     color: var(--white);
     grid-column: 2;
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 30%;
 }
 
 .portfolio-button {
     background-color: var(--grey);
     color: var(--white);
     grid-column: 2;
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 30%;
 }
 
 .basketball-net-image {
@@ -270,6 +281,19 @@ ul {
     column-gap: 20px;
 }
 
+.content-heading {
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: var(--blue);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.content-text {
+    color: var(--blue);
+
+}
 .fantastic-four-image {
     width: 50rem;
     border-radius: 15%;
@@ -304,7 +328,7 @@ ul {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    padding-left: 5rem;
+    padding-left: 3rem;
     color: var(--white);
     padding-right: 15rem;
 }
@@ -351,10 +375,12 @@ footer {
     padding-left: 11rem;
 }
 
-.fas fa-arrow-up {
+.fa-search {
     size: 50px;
     grid-column: 3;
     padding-left: 10rem;
+    padding-top: 5rem;
+    color: var(--white);
 }
 
 .twitter-logo {
@@ -429,137 +455,5 @@ footer {
         display: inline-block;
         grid-template-columns: 1fr;
         padding: 10x;
-    }
-}
-
-/****************
-DESKTOP
-****************/
-
-/*gives media screen to video production, web dev, and print section, and sets the display, grid, and width*/
-@media screen and (min-width: 750px) {
-    .allvideoprod {
-        display: inline-block;
-        width: 50%;
-        grid-template-columns: 1fr;
-    }
-
-    .mrkt {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 50%;
-    }
-    .allwebdev {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        width: 50%;
-    }
-
-    .allprint {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        width: 50%;
-    }
-}
-
-/*gives media screen to john and bob sections and sets the display, grid, width, float*/
-@media screen and (min-width:750px) {
-    .alljohn {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        width: 50%;
-    }
-
-    .allbob {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        width: 50%;
-        float: right;
-    }
-}
-
-/*gives media screen to send us a message section and location section and gives it display, grid, width, and float*/
-@media screen and (min-width:750px) {
-    .leftsendarea {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        width: 45%;
-    }
-
-    .location {
-        display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 2fr;
-        width: 45%;
-        float: right;
-    }
-}
-/*gives media screen to about us section and sets display, grid, width, padding*/
-
-@media screen and (min-width:1120px) {
-    .about {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        width: 50%;
-        padding-right: 50%;
-        grid-template-rows: 2fr;
-    }
-
-    .aboutp {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        float: right
-    }
-}
-
-/*gives media screen to hours of operation and table section and sets flex, display, and width*/
-@media screen and (min-width:750px) {
-    .hofandtable {
-        flex-wrap: wrap;
-        display: grid;
-        width: 50%;
-    }
-}
-
-/*gives media screen and targets form clss and gives it padding top of 20%*/
-@media screen and (min-width:750px) {
-    .form {
-        padding-top: 20%;
-    }
-}
-
-/*targets the media screen with class of digitalt and adjusts width*/
-@media screen and (min-width:750px) {
-    .digitalt {
-        width: 50%;
-    }
-}
-
-/*targets the media screen with class of threeelements and adds grid display and grid properties*/
-@media screen and (min-width:400px) {
-    .main-content {
-        width: 70%;
-        float: left;
-    }
-
-    .sidebar {
-        width: 29%;
-        float: right;
-    }
-    .threeelements {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-column-start: repeat(3,1fr);
-        grid-column-end: repeat(3,1fr);
-        flex-wrap: wrap;
-        align-self: start;
     }
 }
