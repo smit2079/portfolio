@@ -49,15 +49,18 @@ ul {
     display: block;
     padding: 30px;
     color: var(--blue);
+    position: relative;
 }
 
 .nav-links a:hover {
     background-color: var(--red);
+    position: relative;
 }
 
 .nav {
     max-height: 0;
     transition: max-height .5s ease-out;
+    position: relative;
 }
 
 .hamburger {
@@ -123,13 +126,16 @@ ul {
         float: right;
         width: fit-content;
         background-color: transparent;
+        position: relative;
     }
     .nav-links li {
         float: left;
+        position: relative;
     }
     .nav-links a:hover {
         background-color: transparent;
         color: var(--red);
+        position: relative;
     }
     .hamburger {
         display: none;
@@ -149,6 +155,7 @@ ul {
     z-index: 1;
     padding: 20px 0 ;
     display: none;
+    position: relative;
   }
 .subnav-content a {
     color: var(--black);
@@ -156,9 +163,11 @@ ul {
     padding: 0;
     margin: 10px 0;
     text-align: center;
+    position: relative;
 }
 .subnav:hover .subnav-content {
     display: block;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -284,16 +293,39 @@ ul {
 .content-heading {
     padding-left: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     color: var(--blue);
     text-transform: uppercase;
     text-decoration: underline;
 }
 
+.content-button {
+    background-color: var(--red);
+    grid-column: 2;
+    width: 20rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--white) !important;
+    border-radius: 30%;
+    text-align: center;
+    align-items: center;
+}
+
 .content-text {
     color: var(--blue);
-
+    text-align: center;
+    padding-top: 20px;
 }
+
+.banner-button {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .fantastic-four-image {
     width: 50rem;
     border-radius: 15%;
@@ -373,6 +405,21 @@ footer {
     text-align: right;
     grid-column: 2;
     padding-left: 11rem;
+}
+
+.top-skip {
+    color: rgba(255, 255, 255, 50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    grid-column: 3;
+    padding-left: 21rem;
+}
+
+.top-skip-a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .fa-search {
