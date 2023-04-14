@@ -196,11 +196,12 @@ ul {
     object-fit: cover;
     padding-top: 10px;
     padding-bottom: 10px;
+    grid-column: 1;
 }
 
 .content-showcase {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1em;
 }
 
@@ -302,9 +303,10 @@ ul {
 
 .content-button {
     background-color: var(--red);
-    grid-column: 2;
+    grid-column: 3;
     width: 20rem;
     padding: 2rem;
+    height: 6rem;
     text-decoration: none;
     color: var(--white) !important;
     border-radius: 30%;
@@ -334,6 +336,7 @@ ul {
     object-fit: cover;
     padding-top: 10px;
     padding-bottom: 10px;
+    grid-column: 1;
 }
 
 .avengers-poster {
@@ -344,6 +347,7 @@ ul {
     object-fit: cover;
     padding-top: 10px;
     padding-bottom: 20px;
+    grid-column: 1;
 }
 
 .nav li a {
