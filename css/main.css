@@ -1,3 +1,4 @@
+/*root that creates color presets for css elements*/
 :root {
     --red: #BA3330;
     --blue: #2699FB;
@@ -5,30 +6,30 @@
     --white: #ffffff;
     --black: #000000;
 }
-
+/*li tag targeted to change color*/
 li {
     color: white;
 }
-
+/*targets * to add margin, padding, and adjusts box-sizing*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*targets the body tag and adds a background color*/
 body {
     background-color: var(--white);
 }
-
+/*targets all a elements (links) and removes text-decoration and changes the color*/
 a {
     text-decoration: none;
     color: white;
 }
-
+/*targets the ul elements and removes list styling*/
 ul {
     list-style: none;
 }
-
+/*targets the header class and adds a background color, box-shadow, adjusts its postion, top, and width*/
 .header {
     background-color: var(--grey);
     box-shadow: 1px 1px 5px 0px var(--black);
@@ -36,7 +37,7 @@ ul {
     top: 100px;
     width: 100%;
 }
-
+/*targets the nav class and adjusts its width, height, position and adds a background color. also hides any overflow*/
 .nav {
     width: 100%;
     height: 100%;
@@ -44,31 +45,31 @@ ul {
     background-color: var(--grey);
     overflow: hidden;
 }
-
+/*targets the links within the nav-links class and displays as block, adjusts padding and position, and adds color*/
 .nav-links a {
     display: block;
     padding: 30px;
     color: var(--blue);
     position: relative;
 }
-
+/*targets the links within the nav-links class upon hovering and changes background color and adjusts position*/
 .nav-links a:hover {
     background-color: var(--red);
     position: relative;
 }
-
+/*targets the nav class and adds a max-heigh, transition, and adjusts the position*/
 .nav {
     max-height: 0;
     transition: max-height .5s ease-out;
     position: relative;
 }
-
+/*targets the hamburger class and adds a cursor element, floats to the right and adds padding*/
 .hamburger {
     cursor: pointer;
     float: right;
     padding: 40px 20px;
 }
-
+/*targets the hamburger-lines class and adds a background color, height, width, and position and displays as block*/
 .hamburger-lines {
     background: var(--black);
     display: block;
@@ -76,7 +77,7 @@ ul {
     position: relative;
     width: 24px;
 }
-
+/*targets the hamburger-lines class and adds before and after properties where the background color changes, displays as block, and adds height, position, transition, and width*/
 .hamburger-lines::before,
 .hamburger-lines::after{
     background: var(--black);
@@ -88,37 +89,39 @@ ul {
     width: 100%;
 }
 
+/*targets the hamburger-lines class once more for the before property and adjusts vertical position*/
 .hamburger-lines::before {
     top: 5px;
 }
-
+/*targets the hamburger-lines class once more for the after property and adjusts vertical position*/
 .hamburger-lines::after {
     top: -5px;
 }
-
+/*targets the side-menu class and displays as none*/
 .side-menu {
     display: none;
 }
-
+/*targets the side-menu class once it is clicked and changes max height*/
 .side-menu:checked ~ nav {
     max-height: 100%;
 }
-
+/*targets the side-menu class once clicked and siblings from hamburger and hamburger-lines classes and adds a transparent background*/
 .side-menu:checked ~ .hamburger .hamburger-lines {
     background: transparent;
 }
-
+/*targets the side-menu class once clicked and siblings from hamburger and hamburger-lines classes for the before property and adds a transformation and adjusts vertical position*/
 .side-menu:checked ~ .hamburger .hamburger-lines::before {
     transform: rotate(-45deg);
     top: 0;
 }
-
+/*targets the side-menu class once clicked and siblings from hamburger and hamburger-lines classes for the after property and adds a transformation and adjusts vertical position*/
 .side-menu:checked ~ .hamburger .hamburger-lines::after {
     transform: rotate(45deg);
     top: 0;
 }
-
+/*media query setup for a min width of 768px*/
 @media (min-width: 768px) {
+/*targets the nav class and removes max-height, top, background-color, and adds position, float, and width*/
     .nav {
         max-height: none;
         top: 0;
@@ -126,7 +129,6 @@ ul {
         float: right;
         width: fit-content;
         background-color: transparent;
-        position: relative;
     }
     .nav-links li {
         float: left;
