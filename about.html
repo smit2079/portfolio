@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <title>About</title>
 </head>
+<!--creates a main class for the body which will be used to create a container for mobile screen-->
 <body class="mobile-container">
     <header>
+<!--div with class 'navigation' which holds all navigation elements (logo, title, menus)-->
         <div class="navigation">
             <img class="site-logo" src="images/logo.png" alt="logo">
             <h1 class="site-title">Nate Smith</h1>
+<!--beginning of the hamburger menu setup-->
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamburger" for="side-menu"><span class="hamburger-lines"></span></label>
+<!--nav with class 'nav' that holds list items that become links to other pages or just refreshes page-->
             <nav class="nav">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>                    
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="#">Portfolio</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Video Editing</a>
                             <a class="subnav-link" href="#">Photoshop</a>
@@ -31,6 +38,7 @@
                     </li>
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="about.html">Influences</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Movies</a>
                             <a class="subnav-link" href="#">Comics</a>
@@ -39,6 +47,7 @@
                     </li>
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="contact.html">Contact</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Portfolio Site</a>
                             <a class="subnav-link" href="#">Social Media</a>
@@ -47,20 +56,27 @@
                     </li>
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="about.html">About</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Bio</a>
                             <a class="subnav-link" href="#">My Life</a>
                         </div>
                     </li>
                 </ul>
+<!--adds the search icon in the top right of desktop screen size-->
+                <i class="fa fa-search"></i>
             </nav>
         </div>
     </header>
+    <!--h1 that has page heading-->
     <h1>About</h1>
+    <!--h2 that has page subheading-->
     <h2>Bio</h2>
+    <!--paragraph that aids the bio-->
     <p>My name is Nate Smith, and I am a video editor, photographer, animator, and graphic designer. I am currently taking the Interactive Media Design program at Algonquin College in Ottawa. I have a vast portfolio filled with things from high school, college, and even my home projects. My passion for superheroes has driven me to create some amazing work, and I am super proud of all of it.</p>
+    <!--image of myself-->
     <img class="bio-image" src="images/smith_n_3.jpg" alt="handsome young man">
-      
+    <!--h2 with class 'influences' that is targeted in css-->
     <h2 class="influences">Influences</h2>
     <h3>MOVIES</h3>
     <img class="movie-film" src="images/pexels-photo-65128.jpg" alt="movie film">
@@ -72,7 +88,9 @@
     <h2 class="my-life">My Life</h2>
     <img class="life-image" src="images/marvel-1641554_1280.jpg" alt="various comic covers from Marvel comics">
     <p>My love for superheroes have always impacted me, whether it’s in making life choices or needing some inspiration. I grew up watching all the TV shows, movies, and reading the comics I bought, as well as original copies my dad had passed down to me. The characters I have looked up to throughout my life have made me who I am today, and they have taught me important lessons and educate me on how to help others, even without superpowers.</p>
+<!--footer tag that holds a div explained below-->
     <footer>
+<!--div with class 'footer-grid' that holds the footer logo, h2, and h3 (skip-link to the top)-->
         <img class="footer-logo" src="images/logo.png" alt="logo">
         <h2 class="footer-copyright">Copyright 2023</h2>
         <h3 class="top-skip"><a class="top-skip-a" href="#">To The Top</a></h3>
