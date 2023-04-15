@@ -12,18 +12,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
+<!--creates a main class for the body which will be used to create a container for mobile screen-->
 <body class="mobile-container">
     <header>
+<!--div with class 'navigation' which holds all navigation elements (logo, title, menus)-->
         <div class="navigation">  
             <img class="site-logo" src="images/logo.png" alt="logo">
             <h1 class="site-title">Nate Smith</h1>
+<!--beginning of the hamburger menu setup-->
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamburger" for="side-menu"><span class="hamburger-lines"></span></label>
+<!--nav with class 'nav' that holds list items that become links to other pages or just refreshes page-->
             <nav class="nav">
                 <ul class="nav-links">
                     <li><a class="nav-item" href="index.html">Home</a></li>                    
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="#">Portfolio</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Video Editing</a>
                             <a class="subnav-link" href="#">Photoshop</a>
@@ -33,6 +38,7 @@
                     </li>
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="about.html">Influences</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Movies</a>
                             <a class="subnav-link" href="#">Comics</a>
@@ -41,6 +47,7 @@
                     </li>
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="contact.html">Contact</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Portfolio Site</a>
                             <a class="subnav-link" href="#">Social Media</a>
@@ -49,17 +56,21 @@
                     </li>
                     <li class="subnav">
                         <p class="subnavbtn"><a class="nav-item" href="about.html">About</a><i class="fa fa-caret-down"></i></p>
+<!--div with class 'subnav-content' that holds the links to other pages for the dropdown menu-->
                         <div class="subnav-content">
                             <a class="subnav-link" href="#">Bio</a>
                             <a class="subnav-link" href="#">My Life</a>
                         </div>
                     </li>
                 </ul>
+<!--adds the search icon in the top right of desktop screen size-->
                 <i class="fa fa-search"></i>
             </nav>
         </div>
     </header>
+<!--main tag created that holds all main content-->
     <main>
+<!--div with class 'banner-grid' that holds the banner image and banner text, as well as the banner paragraph-->
         <div class="banner-grid">
           <img class="banner-image" src="images/smith_n_wednesday.jpg" alt="clouds">
             <div class="banner-text">
@@ -67,7 +78,7 @@
             </div>
             <p class="banner-subtext">My portfolio consists of video editing, photography, graphic design, and animation. I have been developing these skills my whole life, and I am currently putting them to the test in the Interactive Media Design program at Algonquin College. <strong>Enjoy!</strong></p>  
         </div>
-      
+<!--div with class 'basketball-highlight' that holds the basketball image, buttons, and the headings-->
         <div class="basketball-highlight">
             <div class="basketball-buttons">
                 <button class="category-button"><a class="banner-button" href="#">Categories</a></button>
@@ -79,29 +90,34 @@
               <h3>Basketball Net Photo</h3>   
             </div>
             <img class="basketball-net-image" src="images/smith_n_thursday.jpg" alt="basketball net">
- 
         </div>
-
+<!--h1 with class 'content-heading' for the content showcase section of the homepage-->
         <h1 class="content-heading">Content Showcase</h1>
+<!--div with class 'content-showcase' that holds the images, headings, and div with buttons-->
         <div class="content-showcase">
             <img class="fantastic-four-image" src="images/f4-wallpaper2.png" alt="fantastic four title design">
             <h3 class="content-text"><em>Fantastic Four Trilogy</em> Reveal Animation</h3>
+<!--div with class 'content-button' that holds the buttons for the content showcase-->
             <div class="content-button">
                 <button class="f4-button"><a href="#">Visit</a></button>
             </div>
             <img class="justice-league-poster" src="images/justice-league-2-poster.jpg" alt="justice league poster with multiple DC characters">
             <h3 class="content-text"><em>Zack Snyder’s Justice League 2</em> Poster</h3>
+<!--div with class 'content-button' that holds the buttons for the content showcase-->
             <div class="content-button">
                 <button class="jl-button"><a href="#">Visit</a></button>
             </div>
             <img class="avengers-poster" src="images/avengers-secret-wars-poster.jpg" alt="avengers secret wars poster with multiple Marvel characters">
             <h3 class="content-text"><em>Avengers: Secret Wars</em> Poster</h3>
+<!--div with class 'content-button' that holds the buttons for the content showcase-->
             <div class="content-button">
                 <button class="avengers-button"><a href="#">Visit</a></button>    
             </div>   
         </div>
     </main>
+<!--footer tag that holds a div explained below-->
     <footer>
+<!--div with class 'footer-grid' that holds the footer logo, h2, and h3 (skip-link to the top)-->
         <div class="footer-grid">
             <img class="footer-logo" src="images/logo.png" alt="logo">
             <h2 class="footer-copyright">Copyright 2023</h2>
