@@ -529,6 +529,7 @@ footer {
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 .bio-heading {
@@ -579,6 +580,8 @@ footer {
     margin-right: auto;
     object-fit: cover;
     height: 30rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .comics-heading {
@@ -589,9 +592,10 @@ footer {
                  1px -1px var(--black),
                 -1px 1px var(--black),
                  1px 1px var(--black);
-    padding-top: 10.5rem;
-    padding-left: 21rem;
-    font-size: 90pt;
+    padding-top: 10rem;
+    padding-left: 30rem;
+    font-size: 100pt;
+    position: absolute;
 }
 
 .comics-image {
@@ -602,6 +606,8 @@ footer {
     margin-right: auto;
     object-fit: cover;
     height: 30rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .superheroes-heading {
@@ -626,12 +632,16 @@ footer {
     margin-right: auto;
     object-fit: cover;
     height: 30rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .my-life {
     text-transform: uppercase;
     color: var(--blue);
     padding-left: 20px;
+    font-size: 30pt;
+    padding-bottom: 10px;
 }
 
 .life-image {
@@ -645,8 +655,8 @@ footer {
 }
 
 .life-para {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 20pt;
     padding-top: 15px;
 }
