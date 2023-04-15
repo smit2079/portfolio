@@ -213,13 +213,12 @@ ul {
     column-gap: 1em;
 }
 
-.basketball-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.banner-buttons {
+    grid-column: 2;
     grid-gap: 20px;
     column-gap: 20px;
     padding-right: 20px;
-    align-items: right;
+    align-items: center;
 }
 
 .category-button {
@@ -231,6 +230,7 @@ ul {
     text-decoration: none;
     color: var(--white) !important;
     border-radius: 30%;
+    font-size: 20pt;
 }
 
 .influences-button {
@@ -240,6 +240,7 @@ ul {
     width: 20rem;
     padding: 2rem;
     border-radius: 30%;
+    font-size: 20pt;
 }
 
 .portfolio-button {
@@ -249,6 +250,7 @@ ul {
     width: 20rem;
     padding: 2rem;
     border-radius: 30%;
+    font-size: 20pt;
 }
 
 .basketball-net-image {
@@ -265,6 +267,19 @@ ul {
     padding-right: 28rem;
 }
 
+.banner-text {
+    position: absolute;
+    padding-left: 6rem;
+    padding-top: 14rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: -2px -2px var(--blue),
+                  2px -2px var(--blue),
+                -2px 2px var(--blue),
+                 2px 2px var(--blue);;
+}
+
 .banner-image {
     width: 100%;
     border-radius: 10%;
@@ -276,15 +291,18 @@ ul {
 }
 
 .banner-subtext {
-    text-align: right;
+    text-align: left;
     grid-column: 2;
     padding-right: 20px;
+    padding-top: 2rem;
+    font-size: 20pt;
 }
 
 .banner-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+    grid-gap: 10px;
 }
 
 .footer-grid {
@@ -387,8 +405,12 @@ ul {
 }
 
 .bio-image {
-    width: 50%;
-    border-radius: 5%;
+    width: 30rem;
+    grid-column: 2;
+    object-fit: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .navigation {
@@ -501,6 +523,132 @@ footer {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     padding-left: 33rem;
+}
+
+.about-title {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.bio-heading {
+    text-transform: uppercase;
+    padding-left: 20px;
+    color: var(--blue);
+    font-size: 30pt;
+}
+
+.bio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding-left: 20px;
+}
+
+.bio-para {
+    grid-column: 1;
+    font-size: 20pt;
+}
+
+.influences {
+    text-transform: uppercase;
+    color: var(--blue);
+    padding-left: 20px;
+    font-size: 30pt;
+}
+
+.movies-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    text-shadow: -1px -1px var(--black),
+                 1px -1px var(--black),
+                -1px 1px var(--black),
+                 1px 1px var(--black);
+    position: absolute;
+    padding-top: 10rem;
+    padding-left: 33rem;
+    font-size: 100pt;
+}
+
+.movie-film {
+    width: 75%;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 30rem;
+}
+
+.comics-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    text-shadow: -1px -1px var(--black),
+                 1px -1px var(--black),
+                -1px 1px var(--black),
+                 1px 1px var(--black);
+    padding-top: 10.5rem;
+    padding-left: 21rem;
+    font-size: 90pt;
+}
+
+.comics-image {
+    width: 75%;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 30rem;
+}
+
+.superheroes-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    text-shadow: -1px -1px var(--black),
+                 1px -1px var(--black),
+                -1px 1px var(--black),
+                 1px 1px var(--black);
+    position: absolute;
+    padding-top: 10.5rem;
+    padding-left: 21rem;
+    font-size: 90pt;
+}
+
+.superheroes-image {
+    width: 75%;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 30rem;
+}
+
+.my-life {
+    text-transform: uppercase;
+    color: var(--blue);
+    padding-left: 20px;
+}
+
+.life-image {
+    width: 75%;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 40rem;
+}
+
+.life-para {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20pt;
+    padding-top: 15px;
 }
 @media only screen and (min-width: 800px) {
     .mobile-container {
