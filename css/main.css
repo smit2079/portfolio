@@ -129,26 +129,30 @@ ul {
         width: fit-content;
         background-color: transparent;
     }
+/*targets the nav-links class and the list items within to apply float and a position*/
     .nav-links li {
         float: left;
         position: relative;
     }
+/*targets the nav-links class and the links upon hovering and applies a background color, text color, and position*/
     .nav-links a:hover {
         background-color: transparent;
         color: var(--red);
         position: relative;
     }
+/*targets the hamburger class and removes display*/
     .hamburger {
         display: none;
     }
 }
+/*targets the site-logo class and adjusts width, margin, padding, and adds inline-block display*/
 .site-logo {
     width: 10rem;
     display: inline-block;
     margin-left: 10px;
     padding-top: 20px;
 }
-
+/*targets the subnav-content class and adds background color, border, width, z-index, padding, removes display, and adds positioning*/
 .subnav-content {
     background-color:  var(--white);
     border: solid 1px var(--black);
@@ -158,6 +162,7 @@ ul {
     display: none;
     position: relative;
   }
+/*targets the subnav-content class and the links within and adds color, padding, margin, position, and aligns center and removes text decoration*/
 .subnav-content a {
     color: var(--black);
     text-decoration: none;
@@ -166,29 +171,31 @@ ul {
     text-align: center;
     position: relative;
 }
+/*targets the subnav class on hover as well as the subnav-content class and displays as block and adds position*/
 .subnav:hover .subnav-content {
     display: block;
     position: relative;
 }
-
+/*media query with min-width of 500px*/
 @media only screen and (min-width: 500px) {
-    /* Sub nav */
+    /*targets the subnav-content class and adds padding and background color, and removes display*/
     .subnav-content {
         padding: 20px 0 ;
         display: none;
         background-color:  var(--white);
     }
+/*targets the subnav-content class and the links within and changes color*/
     .subnav-content a {
-        color: black;
+        color: var(--black);
     }
 }
-
+/*targets the footer logo class and adds opacity, width and padding*/
 .footer-logo {
     opacity: 50%;
     width: 120px;
     padding: 10px;
 }
-
+/*targets the justice-league-poster class and adds width, border radius, padding, height, and adjusts object fit and grid column*/
 .justice-league-poster {
     width: 50rem;
     border-radius: 10%;
@@ -199,19 +206,19 @@ ul {
     padding-bottom: 10px;
     grid-column: 1;
 }
-
+/*targets the content-showcase class and displays as grid and establishes grid columns and grid gap*/
 .content-showcase {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1em;
 }
-
+/*targets the basketball-highlight class and displays as grid and establishes grid columns and grid gap*/
 .basketball-highlight {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 1em;
 }
-
+/*targets the banner-buttons class and adds grid column, grid gap, coluumn gap, padding and aligns in the center*/
 .banner-buttons {
     grid-column: 2;
     grid-gap: 20px;
@@ -219,7 +226,7 @@ ul {
     padding-right: 20px;
     align-items: center;
 }
-
+/*targets the category-button class and adds background color, text color, grid column, width, padding, border radius, and changes font size, and removes text-decoration*/
 .category-button {
     background-color: var(--red);
     color: var(--white);
@@ -231,7 +238,7 @@ ul {
     border-radius: 30%;
     font-size: 20pt;
 }
-
+/*targets the influences-button class and adds background color, text color, grid column, width, padding, border radius, and changes font size, and removes text-decoration*/
 .influences-button {
     background-color: var(--blue);
     color: var(--white);
@@ -241,7 +248,7 @@ ul {
     border-radius: 30%;
     font-size: 20pt;
 }
-
+/*targets the portfolio-button class and adds background color, text color, grid column, width, padding, border radius, and changes font size, and removes text-decoration*/
 .portfolio-button {
     background-color: var(--grey);
     color: var(--white);
@@ -251,21 +258,21 @@ ul {
     border-radius: 30%;
     font-size: 20pt;
 }
-
+/*targets the basketball-net-image class and changes width and padding and adds border radius and grid column*/
 .basketball-net-image {
     width: 50%;
     border-radius: 5%;
     grid-column: 1;
     padding-left: 20px;
 }
-
+/*targets the basketball-text and adds grid column, padding, and aligns the text*/
 .basketball-text {
     grid-column: 1;
     padding-left: 20px;
     text-align: right;
     padding-right: 28rem;
 }
-
+/*targets the banner-text class and establishes position, adds padding, text transform, color, text shadow, and aligns text*/
 .banner-text {
     position: absolute;
     padding-left: 6rem;
@@ -278,7 +285,7 @@ ul {
                 -2px 2px var(--blue),
                  2px 2px var(--blue);;
 }
-
+/*targets the banner-image class and adds width, border radius, height, padding, grid column, and object fit*/
 .banner-image {
     width: 100%;
     border-radius: 10%;
@@ -288,7 +295,7 @@ ul {
     padding-left: 20px;
     grid-column: 1;
 }
-
+/*targets the banner-subtext class and aligns text, adds grid column and padding, and changes font size*/
 .banner-subtext {
     text-align: left;
     grid-column: 2;
@@ -296,20 +303,20 @@ ul {
     padding-top: 2rem;
     font-size: 20pt;
 }
-
+/*targets the banner-grid class and displays as grid, establishes grid columns and adds column and grid gap*/
 .banner-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     grid-gap: 10px;
 }
-
+/*targets the footer-grid class and displays as grid and establishes grid columns and adds column gap*/
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
 }
-
+/*targets the content-heading class and adds padding, color, text transform, text decoration and aligns text*/
 .content-heading {
     padding-left: 20px;
     padding-top: 10px;
@@ -319,7 +326,7 @@ ul {
     text-transform: uppercase;
     text-decoration: underline;
 }
-
+/*targets the content-button class and adds background color, grid column, width, padding, height, color, border radius, removes text decoration, and aligns text and items*/
 .content-button {
     background-color: var(--red);
     grid-column: 3;
@@ -332,13 +339,13 @@ ul {
     text-align: center;
     align-items: center;
 }
-
+/*targets the content-text class and adds color and padding and aligns text*/
 .content-text {
     color: var(--blue);
     text-align: center;
     padding-top: 20px;
 }
-
+/*targets the banner-button class and adds color, displays as flex, centers content, and removes text-decoration*/
 .banner-button {
     color: var(--white);
     text-decoration: none;
@@ -346,7 +353,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
-
+/*targets the fantastic-four-image class and adds width, border-radius, padding, height, object fit and grid column*/
 .fantastic-four-image {
     width: 50rem;
     border-radius: 15%;
@@ -357,7 +364,7 @@ ul {
     padding-bottom: 10px;
     grid-column: 1;
 }
-
+/*targets the avengers-poster class and adds width, border-radius, padding, height, object fit and grid column*/
 .avengers-poster {
     width: 50rem;
     border-radius: 15%;
@@ -368,16 +375,16 @@ ul {
     padding-bottom: 20px;
     grid-column: 1;
 }
-
+/*targets the nav class and the list items and links within and adds color and aligns text*/
 .nav li a {
     color: var(--black);
     text-align: center;
 }
-
+/*targets the subnav-link class and adds color*/
 .subnav-link {
     color: var(--black) !important;
 }
-
+/*targets the site-title class and displays as flex, adds flex direction, padding, color, and centers items*/
 .site-title {
     display: flex;
     flex-direction: row;
@@ -387,22 +394,22 @@ ul {
     color: var(--white);
     padding-right: 15rem;
 }
-
+/*targets the movie-film class and adds width and border radius*/
 .movie-film {
     width: 20rem;
     border-radius: 5%;
 }
-
+/*targets the comics-image class and adds width and border radius*/
 .comics-image {
     width: 20rem;
     border-radius: 5%;
 }
-
+/*targets the superheroes-image class and adds width and border radius*/
 .superheroes-image {
     width: 20rem;
     border-radius: 5%;
 }
-
+/*targets the bio-image class and adds width, grid column, object fit, and displays as flex and centers items*/
 .bio-image {
     width: 30rem;
     grid-column: 2;
@@ -411,19 +418,19 @@ ul {
     display: flex;
     justify-content: center;
 }
-
+/*targets the navigation class and adds background color and padding, and displays as flex and establishes position*/
 .navigation {
     background-color: var(--blue);
     display: flex;
     position: static;
     padding-bottom: 20px;
 }
-
+/*targets the footer class and adds background color and displays as flex*/
 footer {
     background-color: var(--blue);
     display: flex;
 }
-
+/*targets the footer-copyright class and adds color, grid column, padding, displays as flex, and centers items*/
 .footer-copyright {
     color: rgba(255, 255, 255, 50%);
     display: flex;
@@ -433,7 +440,7 @@ footer {
     grid-column: 2;
     padding-left: 11rem;
 }
-
+/*targets the top-skip class and adds color, grid column, padding, displays as flex, and centers items*/
 .top-skip {
     color: rgba(255, 255, 255, 50%);
     display: flex;
@@ -443,12 +450,12 @@ footer {
     grid-column: 3;
     padding-left: 21rem;
 }
-
+/*targets the top-skip-a class and adds color and removes text-decoration*/
 .top-skip-a {
     color: var(--white);
     text-decoration: none;
 }
-
+/*targets the fa-search class and adjusts size, and adds grid column, padding, and color*/
 .fa-search {
     size: 50px;
     grid-column: 3;
@@ -456,7 +463,7 @@ footer {
     padding-top: 5rem;
     color: var(--white);
 }
-
+/*targets the twitter-logo class and adds width, padding, and grid column*/
 .twitter-logo {
     width: 60%;
     padding-left: 20px;
@@ -465,7 +472,7 @@ footer {
     padding-left: 30px;
     grid-column: 1;
 }
-
+/*targets the instagram-logo class and adds width, padding, and grid column*/
 .instagram-logo {
     width: 60%;
     padding-left: 20px;
@@ -474,7 +481,7 @@ footer {
     padding-left: 30px;
     grid-column: 1;
 }
-
+/*targets the behance-logo class and adds width, padding, and grid column*/
 .behance-logo {
     width: 60%;
     padding-left: 20px;
@@ -483,26 +490,26 @@ footer {
     padding-left: 30px;
     grid-column: 1;
 }
-
+/*targets the form class and displays as grid and establishes the grid columns*/
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
+/*targets the name-input class and adds border, border radius, background color and padding*/
 .name-input {
     border: 2px solid var(--black);
     border-radius: 4px;
     background-color: var(--white);
     padding: 10px;
 }
-
+/*targets the email-input class and adds border, border radius, background color and padding*/
 .email-input {
     border: 2px solid var(--black);
     border-radius: 4px;
     background-color: var(--white);
     padding: 10px;
 }
-
+/*targets the message-input class and adds width, height, margin, border, border radius, background color, and adjusts box sizing*/
 .message-input {
   width: 100%;
   height: 200px;
@@ -512,14 +519,14 @@ footer {
   border-radius: 4px;
   background-color: var(--white);
 }
-
+/*targets the message-h class and adds padding and margin and aligns text*/
 .message-h {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     margin-left: 15rem;
 }
-
+/*targets the submit-button class and adds color, background color, text transform, padding, margin, and aligns text*/
 .submit-button {
     color: var(--white);
     background-color: var(--blue);
@@ -531,47 +538,47 @@ footer {
     margin-left: 45rem;
     text-align: center;
 }
-
+/*targets the name-email-input class and displays as grid, adds column gap, padding, and establishes grid columns*/
 .name-email-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     padding-left: 33rem;
 }
-
+/*targets the about-title class and aligns text, adds text decoration, font weight and padding*/
 .about-title {
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
     padding-top: 10px;
 }
-
+/*targets the bio-heading class and adds text transform, padding, color, and font size*/
 .bio-heading {
     text-transform: uppercase;
     padding-left: 20px;
     color: var(--blue);
     font-size: 30pt;
 }
-
+/*targets the bio-container and displays as grid, adds column gap and padding, and establishes grid columns*/
 .bio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     padding-left: 20px;
 }
-
+/*targets the bio-para class and adds grid column and font size*/
 .bio-para {
     grid-column: 1;
     font-size: 20pt;
 }
-
+/*targets the influences class and adds text transform, color, padding, and font size*/
 .influences {
     text-transform: uppercase;
     color: var(--blue);
     padding-left: 20px;
     font-size: 30pt;
 }
-
+/*targets the movies-heading class and adds text transform, color, text shadow, padding, font size, aligns text, and adjusts position*/
 .movies-heading {
     text-transform: uppercase;
     text-align: center;
@@ -585,7 +592,7 @@ footer {
     padding-left: 33rem;
     font-size: 100pt;
 }
-
+/*targets the movie-film class and adds width, border radius, margin, height, object fit, padding, and displays as block*/
 .movie-film {
     width: 75%;
     border-radius: 10%;
@@ -597,7 +604,7 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/*targets the comics-heading class and adds text transform, color, text shadow, padding, font size, aligns text, and adjusts position*/
 .comics-heading {
     text-transform: uppercase;
     text-align: center;
@@ -611,7 +618,7 @@ footer {
     font-size: 100pt;
     position: absolute;
 }
-
+/*targets the comics-image class and adds width, border radius, margin, height, object fit, padding, and displays as block*/
 .comics-image {
     width: 75%;
     border-radius: 10%;
@@ -623,7 +630,7 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/*targets the superheroes-heading class and adds text transform, color, text shadow, padding, font size, aligns text, and adjusts position*/
 .superheroes-heading {
     text-transform: uppercase;
     text-align: center;
@@ -637,7 +644,7 @@ footer {
     padding-left: 21rem;
     font-size: 90pt;
 }
-
+/*targets the superheroes-image class and adds width, border radius, margin, height, object fit, padding, and displays as block*/
 .superheroes-image {
     width: 75%;
     border-radius: 10%;
@@ -649,7 +656,7 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/*targets the my-life class and adds text transform, color, padding, and font size*/
 .my-life {
     text-transform: uppercase;
     color: var(--blue);
@@ -657,7 +664,7 @@ footer {
     font-size: 30pt;
     padding-bottom: 10px;
 }
-
+/*targets the life-image class and adds width, border radius, margin, height, object fit, and displays as block*/
 .life-image {
     width: 75%;
     border-radius: 10%;
@@ -667,27 +674,27 @@ footer {
     object-fit: cover;
     height: 40rem;
 }
-
+/*targets the life-para class and adds padding and font size*/
 .life-para {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 20pt;
     padding-top: 15px;
 }
-
+/*targets the social-media-links class and displays as grid, establishes grid columns and adds column gap*/
 .social-media-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1em;
 }
-
+/*targets the social-text class and adds color, padding, font size and aligns text*/
 .social-text {
     color: var(--black);
     text-align: center;
     padding-top: 8rem;
     font-size: 30pt;
 }
-
+/*targets the social-buttons class and adds background color, color, grid column, width, border radius, font size, height, padding, and removes text decoration*/
 .social-buttons {
     background-color: var(--red);
     color: var(--white);
@@ -701,19 +708,19 @@ footer {
     height: 10rem;
     padding-top: 3.5rem;
 }
-
+/*targets the social-email class and adds padding, font size, and width*/
 .social-email {
     padding: 10px;
     font-size: 30pt;
     width: 4rem;
 }
-
+/*targets the home-contact class and aligns text, and adds padding*/
 .home-contact {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/*targets the home-about class and aligns text, and adds padding*/
 .home-about {
     text-align: center;
     padding-top: 20px;
