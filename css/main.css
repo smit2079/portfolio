@@ -39,7 +39,7 @@ ul {
 }
 /*targets the nav class and adjusts its width, height, position and adds a background color. also hides any overflow*/
 .nav {
-    width: 50;
+    width: 50px;
     height: 100%;
     background-color: var(--grey);
     overflow: hidden;
@@ -850,7 +850,6 @@ footer {
         justify-content: center;
         align-items: center;
         grid-column: 1;
-        padding-left: none;
     }
     .justice-league-poster {
         width: 26rem;
@@ -906,7 +905,6 @@ footer {
         font-size: 20pt;
         text-decoration: none;
         color: var(--blue);
-       font-weight: none;
     }
     .bio-heading {
         font-size: 20pt;
